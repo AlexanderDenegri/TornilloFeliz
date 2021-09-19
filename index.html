@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>El tornillo Feliz</title>
+  </head>
+
+  <body>
+    <div class="titulo">
+      <label class="l1" for="">MI ASISTENTE WATSAOM </label>
+    </div>
+    <div>
+      <label for="" class="l">
+        Hola este mi primer asistente Watsaom, podras consultar los siguientes
+        productos dandole click en el icono de mensaje en la parte inferior de
+        su pantalla
+      </label>
+    </div>
+    <div class="padre">
+      <div class="i1">
+        <label for="">Ladrillos</label
+        ><img class="img" src="imagenes/1.3.jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Preservante para madera</label>
+        <img class="img" src="imagenes/1231073.jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Tinner</label>
+        <img class="img" src="imagenes/53904.jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Cemento</label>
+        <img
+          class="img"
+          src="imagenes/image-2a8ca8391884494d9fc555672d585b0f.jpg"
+          alt=""
+        />
+      </div>
+      <div class="i1">
+        <label for="">Clavo</label>
+        <img class="img" src="imagenes/descarga (1).jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Temple</label>
+        <img class="img" src="imagenes/descarga (2).jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Alambre</label>
+        <img class="img" src="imagenes/descarga.jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Fierro</label>
+        <img
+          class="img"
+          src="imagenes/empresas-de-fierro-corrugado.jpg"
+          alt=""
+        />
+      </div>
+      <div class="i1">
+        <label for="">Esteras</label>
+        <img class="img" src="imagenes/estera03.jpg" alt="" />
+      </div>
+      <div class="i1">
+        <label for="">Tubos(Tubos de desague)</label>
+        <img
+          class="img"
+          src="imagenes/Tubos-PVC-para-instalaciones-de-desague.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "df96786c-df58-42c6-aa3b-778afb2609d3", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "db66440b-5ad1-478a-a882-4c8c4b998a46", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
